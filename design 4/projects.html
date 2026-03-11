@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe | Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Theme Switch -->
+    <div class="theme-switch">
+        <div class="theme-switch-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="toggle-ball"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="logo">
+            <span>&lt;John<span class="highlight">Doe</span>/&gt;</span>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="index.html#certifications">Certifications</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>My <span class="highlight">Projects</span></h1>
+        <p>A showcase of my best work and personal projects</p>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="/api/placeholder/600/400" alt="E-commerce Platform">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">MongoDB</span>
+                    </div>
+                    <h3 class="project-title">E-commerce Platform</h3>
+                    <p class="project-description">A full-featured e-commerce platform with product management, cart functionality, and payment processing.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="/api/placeholder/600/400" alt="Fitness Tracker App">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">React Native</span>
+                        <span class="project-tag">Firebase</span>
+                        <span class="project-tag">Chart.js</span>
+                    </div>
+                    <h3 class="project-title">Fitness Tracker App</h3>
+                    <p class="project-description">A mobile application for tracking workouts, nutrition, and fitness progress with detailed analytics.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-category="ui">
+                <div class="project-image">
+                    <img src="/api/placeholder/600/400" alt="Dashboard UI Kit">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">Figma</span>
+                        <span class="project-tag">UI/UX</span>
+                        <span class="project-tag">Design System</span>
+                    </div>
+                    <h3 class="project-title">Dashboard UI Kit</h3>
+                    <p class="project-description">A comprehensive UI kit for building modern dashboard interfaces with customizable components.</p>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="/api/placeholder/600/400" alt="Task Management System">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">Vue.js</span>
+                        <span class="project-tag">Express</span>
+                        <span class="project-tag">PostgreSQL</span>
+                    </div>
+                    <h3 class="project-title">Task Management System</h3>
+                    <p class="project-description">A collaborative task management application with real-time updates and project tracking features.</p>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="/api/placeholder/600/400" alt="Travel Companion App">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">Flutter</span>
+                        <span class="project-tag">Dart</span>
+                        <span class="project-tag">Google Maps API</span>
+                    </div>
+                    <h3 class="project-title">Travel Companion App</h3>
+                    <p class="project-description">A travel assistant app with itinerary planning, location-based recommendations, and offline maps.</p>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card" data-category="ui">
+                <div class="project-image">
+                    <img src="/api/placeholder/600/400" alt="Financial App UI Design">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">Adobe XD</span>
+                        <span class="project-tag">UI/UX</span>
+                        <span class="project-tag">Prototype</span>
+                    </div>
+                    <h3 class="project-title">Financial App UI Design</h3>
+                    <p class="project-description">A clean and intuitive UI design for a personal finance management application with data visualization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="cta-content">
+            <h2>Interested in working together?</h2>
+            <p>Let's discuss your project and bring your ideas to life!</p>
+            <a href="index.html#contact" class="btn primary-btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>&lt;John<span class="highlight">Doe</span>/&gt;</span>
+            </div>
+            <p>Creating innovative web solutions with passion and dedication.</p>
+            <div class="footer-social">
+                <a href="#" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 John Doe. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

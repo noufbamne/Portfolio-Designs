@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maya Velasquez | Digital Architect</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+    <!-- Audio Toggle -->
+    <div class="audio-toggle">
+        <button id="audioToggle" aria-label="Toggle sound">
+            <i class="fas fa-volume-mute" id="audioIcon"></i>
+        </button>
+        <div class="audio-waves">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Holographic Cursor -->
+    <div class="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+        <div class="cursor-trails">
+            <div class="trail"></div>
+            <div class="trail"></div>
+            <div class="trail"></div>
+        </div>
+    </div>
+
+    <!-- Orbital Loading Screen -->
+    <div class="loading-screen">
+        <div class="orbital-loader">
+            <div class="orbital-circle circle-1"></div>
+            <div class="orbital-circle circle-2"></div>
+            <div class="orbital-circle circle-3"></div>
+            <div class="orbital-core"></div>
+        </div>
+        <div class="loading-text">
+            <span class="loading-letter">I</span>
+            <span class="loading-letter">N</span>
+            <span class="loading-letter">I</span>
+            <span class="loading-letter">T</span>
+            <span class="loading-letter">I</span>
+            <span class="loading-letter">A</span>
+            <span class="loading-letter">L</span>
+            <span class="loading-letter">I</span>
+            <span class="loading-letter">Z</span>
+            <span class="loading-letter">I</span>
+            <span class="loading-letter">N</span>
+            <span class="loading-letter">G</span>
+        </div>
+        <div class="loading-progress">0%</div>
+    </div>
+
+    <!-- Liquid Nav Menu -->
+    <div class="liquid-nav-overlay"></div>
+    <nav class="liquid-nav">
+        <div class="liquid-toggle">
+            <div class="liquid-blob"></div>
+            <div class="liquid-bar"></div>
+            <div class="liquid-bar"></div>
+        </div>
+        <div class="liquid-menu">
+            <div class="liquid-container">
+                <div class="menu-links">
+                    <a href="#intro" class="menu-link" data-text="HOME">HOME</a>
+                    <a href="#works" class="menu-link" data-text="WORKS">WORKS</a>
+                    <a href="#laboratory" class="menu-link" data-text="LABORATORY">LABORATORY</a>
+                    <a href="#dimensions" class="menu-link" data-text="DIMENSIONS">DIMENSIONS</a>
+                    <a href="#contact" class="menu-link" data-text="CONTACT">CONTACT</a>
+                </div>
+                <div class="menu-info">
+                    <div class="menu-social">
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="menu-email">
+                        <a href="mailto:hello@mayavelasquez.com">hello@mayavelasquez.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="parallax-container">
+        <!-- Chromatic Aberration Background -->
+        <div class="chromatic-bg">
+            <div class="chromatic-layer layer-red"></div>
+            <div class="chromatic-layer layer-green"></div>
+            <div class="chromatic-layer layer-blue"></div>
+            <div class="noise-overlay"></div>
+            <div class="gradient-mask"></div>
+        </div>
+
+        <!-- Interactive Mesh Background -->
+        <div class="mesh-container">
+            <canvas id="meshCanvas"></canvas>
+        </div>
+
+        <!-- Section: Intro -->
+<!-- Section: Intro with Image -->
+<section id="intro" class="section intro-section">
+    <div class="section-wrapper">
+        <div class="intro-container">
+            <div class="intro-content">
+                <div class="glitch-container">
+                    <h1 class="glitch-text" data-text="ALEX WRIGHT">ALEX WRIGHT</h1>
+                </div>
+                <div class="role-container">
+                    <div class="role-slider">
+                        <span class="role">COMPUTER SCIENTIST</span>
+                        <span class="role">ALGORITHM ENGINEER</span>
+                        <span class="role">SYSTEMS ARCHITECT</span>
+                        <span class="role">COMPUTER SCIENTIST</span>
+                    </div>
+                </div>
+                <div class="intro-desc">
+                    <p class="reveal-text">Specialized in algorithm optimization, distributed systems, and machine learning. I craft elegant solutions to complex computational problems, building scalable architectures that push the boundaries of technology.</p>
+                </div>
+                <div class="intro-cta">
+                    <a href="#works" class="liquid-button">
+                        <span class="btn-text">EXPLORE WORK</span>
+                        <span class="btn-liquid"></span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="intro-image">
+                <div class="image-frame">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format" alt="Alex Wright - Computer Scientist">
+                    <div class="image-glitch-effect"></div>
+                </div>
+                <div class="tech-orbit">
+                    <div class="tech-icon icon-1"><i class="fas fa-code"></i></div>
+                    <div class="tech-icon icon-2"><i class="fas fa-database"></i></div>
+                    <div class="tech-icon icon-3"><i class="fas fa-brain"></i></div>
+                    <div class="tech-icon icon-4"><i class="fas fa-server"></i></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-text">SCROLL</div>
+            <div class="scroll-line"></div>
+        </div>
+    </div>
+    <div class="augmented-element floating-shape shape-1"></div>
+    <div class="augmented-element floating-shape shape-2"></div>
+    <div class="augmented-element floating-shape shape-3"></div>
+</section>
+
+        <!-- Section: Works -->
+        <section id="works" class="section works-section">
+            <div class="section-wrapper">
+                <div class="section-header">
+                    <h2 class="section-title split-title">
+                        <span class="title-part">FEATURED</span>
+                        <span class="title-part">WORKS</span>
+                    </h2>
+                </div>
+                
+                <div class="projects-prism">
+                    <div class="prism-controls">
+                        <button class="prism-prev"><span></span></button>
+                        <button class="prism-next"><span></span></button>
+                    </div>
+                    
+                    <div class="prism-carousel">
+                        <div class="prism-face active" data-project="neuromorphic">
+                            <div class="project-card">
+                                <div class="project-content">
+                                    <span class="project-number">01</span>
+                                    <h3 class="project-title">QUANTUM ALGORITHM</h3>
+                                    <p class="project-desc">A quantum computing simulator implementing Shor's algorithm for integer factorization with improved efficiency over classical approaches.</p>
+                                    <div class="project-meta">
+                                      <span class="meta-item">Quantum Computing</span>
+                                      <span class="meta-item">Python</span>
+                                      <span class="meta-item">Linear Algebra</span>
+                                    </div>
+                                    <a href="#" class="project-link">VIEW PROJECT</a>
+                                  </div>
+                                <div class="project-visual">
+                                    <div class="visual-glitch">
+                                        <img src="https://images.unsplash.com/photo-1583339793403-3d9b001b6008?q=80&w=600&auto=format" alt="Neuromorphic Project">
+                                        <div class="glitch-effect"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="prism-face" data-project="synthscape">
+                            <div class="project-card">
+                                <div class="project-content">
+                                    <span class="project-number">03</span>
+                                    <h3 class="project-title">DISTRIBUTED DB</h3>
+                                    <p class="project-desc">Scalable distributed database with CRDTs for conflict-free data synchronization across globally distributed nodes.</p>
+                                    <div class="project-meta">
+                                      <span class="meta-item">Rust</span>
+                                      <span class="meta-item">Distributed Systems</span>
+                                      <span class="meta-item">Database Theory</span>
+                                    </div>
+                                    <a href="#" class="project-link">VIEW PROJECT</a>
+                                  </div>
+                                <div class="project-visual">
+                                    <div class="visual-glitch">
+                                        <img src="https://images.unsplash.com/photo-1633281651728-b7f0bd1f3cce?q=80&w=600&auto=format" alt="Synthscape Project">
+                                        <div class="glitch-effect"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="prism-face" data-project="quantumux">
+                            <div class="project-card">
+                                <div class="project-content">
+                                    <span class="project-number">03</span>
+                                    <h3 class="project-title">QUANTUMUX</h3>
+                                    <p class="project-desc">A design system that applies quantum computing principles to user interface patterns.</p>
+                                    <div class="project-meta">
+                                        <span class="meta-item">UI/UX</span>
+                                        <span class="meta-item">Design System</span>
+                                        <span class="meta-item">CSS Architecture</span>
+                                    </div>
+                                    <a href="#" class="project-link">VIEW PROJECT</a>
+                                </div>
+                                <div class="project-visual">
+                                    <div class="visual-glitch">
+                                        <img src="https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?q=80&w=600&auto=format" alt="QuantumUX Project">
+                                        <div class="glitch-effect"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Laboratory -->
+        <section id="laboratory" class="section lab-section">
+            <div class="section-wrapper">
+                <div class="section-header">
+                    <h2 class="section-title split-title">
+                        <span class="title-part">THE</span>
+                        <span class="title-part">LABORATORY</span>
+                    </h2>
+                </div>
+                
+                <div class="lab-clusters">
+                    <!-- Cluster 1: Skills -->
+                    <div class="lab-cluster">
+                        <div class="cluster-header">
+                            <h3 class="cluster-title">TECHNICAL SKILLSET</h3>
+                            <div class="cluster-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="cluster-items">
+                            <div class="skill-cell">
+                                <div class="skill-name">Algorithms & Data Structures</div>
+                                <div class="skill-level">
+                                  <div class="level-bar">
+                                    <div class="level-fill" style="width: 95%"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="skill-cell">
+                                <div class="skill-name">Distributed Systems</div>
+                                <div class="skill-level">
+                                  <div class="level-bar">
+                                    <div class="level-fill" style="width: 92%"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="skill-cell">
+                                <div class="skill-name">Machine Learning</div>
+                                <div class="skill-level">
+                                  <div class="level-bar">
+                                    <div class="level-fill" style="width: 88%"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="skill-cell">
+                                <div class="skill-name">Compiler Design</div>
+                                <div class="skill-level">
+                                  <div class="level-bar">
+                                    <div class="level-fill" style="width: 85%"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="skill-cell">
+                                <div class="skill-name">System Architecture</div>
+                                <div class="skill-level">
+                                  <div class="level-bar">
+                                    <div class="level-fill" style="width: 90%"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="skill-cell">
+                                <div class="skill-name">Cloud Infrastructure</div>
+                                <div class="skill-level">
+                                  <div class="level-bar">
+                                    <div class="level-fill" style="width: 87%"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                        </div>
+                    </div>
+                    
+                    <!-- Cluster 2: Experiments -->
+                    <div class="lab-cluster">
+                        <div class="cluster-header">
+                            <h3 class="cluster-title">RECENT EXPERIMENTS</h3>
+                            <div class="cluster-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                        </div>
+                        <div class="experiments-grid">
+                            <div class="experiment-cell">
+                                <div class="experiment-preview">
+                                    <div class="preview-hologram"></div>
+                                    <img src="https://images.unsplash.com/photo-1642961096248-9c95ebb4b64e?q=80&w=300&auto=format" alt="Experiment 1">
+                                </div>
+                                <div class="experiment-info">
+                                    <h4>Blockchain Protocol</h4>
+                                    <p>Proof-of-stake consensus algorithm with improved security properties</p>
+                                  </div>
+                            </div>
+                            <div class="experiment-cell">
+                                <div class="experiment-preview">
+                                    <div class="preview-hologram"></div>
+                                    <img src="https://images.unsplash.com/photo-1604871000636-074fa5117945?q=80&w=300&auto=format" alt="Experiment 2">
+                                </div>
+                                <div class="experiment-info">
+                                    <h4>Parallel Computing</h4>
+                                    <p>CUDA-accelerated matrix operations for computer vision applications</p>
+                                  </div>
+                                  
+                            </div>
+                            <div class="experiment-cell">
+                                <div class="experiment-preview">
+                                    <div class="preview-hologram"></div>
+                                    <img src="https://images.unsplash.com/photo-1536566482680-fca31930a0bd?q=80&w=300&auto=format" alt="Experiment 3">
+                                </div>
+                                <div class="experiment-info">
+                                    <h4>Cryptography Model</h4>
+                                    <p>Post-quantum encryption scheme resistant to Shor's algorithm</p>
+                                  </div>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Dimensions (Services) -->
+        <section id="dimensions" class="section dimensions-section">
+            <div class="section-wrapper">
+                <div class="section-header">
+                    <h2 class="section-title split-title">
+                        <span class="title-part">DIMENSIONAL</span>
+                        <span class="title-part">SERVICES</span>
+                    </h2>
+                </div>
+                
+                <div class="dimensions-container">
+                    <div class="dimension-orbit">
+                        <div class="orbit-path"></div>
+                        <div class="dimension-node node-1 active" data-dimension="creative">
+                            <div class="node-icon"><i class="fas fa-paint-brush"></i></div>
+                        </div>
+                        <div class="dimension-node node-2" data-dimension="technical">
+                            <div class="node-icon"><i class="fas fa-code"></i></div>
+                        </div>
+                        <div class="dimension-node node-3" data-dimension="strategic">
+                            <div class="node-icon"><i class="fas fa-lightbulb"></i></div>
+                        </div>
+                        <div class="dimension-node node-4" data-dimension="experiential">
+                            <div class="node-icon"><i class="fas fa-vr-cardboard"></i></div>
+                        </div>
+                    </div>
+                    
+                    <div class="dimension-details">
+                        <div class="dimension-panel active" id="creative">
+                            <h3 class="dimension-title">ALGORITHM DIMENSION</h3>
+                            <p class="dimension-desc">Crafting elegant, efficient algorithms that solve complex computational problems with optimal time and space complexity.</p>
+                            <ul class="dimension-aspects">
+                              <li>Algorithm Optimization</li>
+                              <li>Computational Complexity</li>
+                              <li>Data Structure Design</li>
+                              <li>Performance Analysis</li>
+                            </ul>
+                            
+
+                        </div>
+                        
+                        <div class="dimension-panel" id="technical">
+                            <h3 class="dimension-title">SYSTEM DIMENSION</h3>
+                            <p class="dimension-desc">Designing and implementing robust, scalable system architectures that can handle high-volume data processing and real-time operations.</p>
+                            <ul class="dimension-aspects">
+                              <li>Distributed Systems</li>
+                              <li>Database Architecture</li>
+                              <li>Cloud Infrastructure</li>
+                              <li>Microservices Design</li>
+                            </ul>
+                            
+                          
+                            </ul>
+                        </div>
+                        
+                        <div class="dimension-panel" id="strategic">
+                            <h3 class="dimension-title">INTELLIGENCE DIMENSION</h3>
+                            <p class="dimension-desc">Leveraging machine learning and AI to create systems that can adapt, learn, and make intelligent decisions based on data.</p>
+                            <ul class="dimension-aspects">
+                              <li>Neural Network Design</li>
+                              <li>Reinforcement Learning</li>
+                              <li>Natural Language Processing</li>
+                              <li>Computer Vision</li>
+                            </ul>
+                            
+                           
+                        </div>
+                        
+                        <div class="dimension-panel" id="experiential">
+                            <h3 class="dimension-title">SECURITY DIMENSION</h3>
+                            <p class="dimension-desc">Implementing robust security protocols and cryptographic systems to protect data integrity and privacy.</p>
+                            <ul class="dimension-aspects">
+                              <li>Cryptography</li>
+                              <li>Secure System Design</li>
+                              <li>Vulnerability Analysis</li>
+                              <li>Blockchain Security</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Contact -->
+        <section id="contact" class="section contact-section">
+            <div class="section-wrapper">
+                <div class="section-header">
+                    <h2 class="section-title split-title">
+                        <span class="title-part">INITIATE</span>
+                        <span class="title-part">CONTACT</span>
+                    </h2>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form">
+                            <div class="form-field">
+                                <div class="field-container">
+                                    <input type="text" id="name" class="morphing-input" required>
+                                    <label for="name" class="morphing-label">YOUR NAME</label>
+                                    <div class="field-line"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-field">
+                                <div class="field-container">
+                                    <input type="email" id="email" class="morphing-input" required>
+                                    <label for="email" class="morphing-label">YOUR EMAIL</label>
+                                    <div class="field-line"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-field">
+                                <div class="field-container">
+                                    <input type="text" id="subject" class="morphing-input" required>
+                                    <label for="subject" class="morphing-label">PROJECT SUBJECT</label>
+                                    <div class="field-line"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-field textarea-field">
+                                <div class="field-container">
+                                    <textarea id="message" class="morphing-input" required></textarea>
+                                    <label for="message" class="morphing-label">YOUR MESSAGE</label>
+                                    <div class="field-line"></div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="form-submit">
+                                <span class="submit-text">TRANSMIT MESSAGE</span>
+                                <div class="submit-particles"></div>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="info-block">
+                            <h3 class="info-title">LOCATION</h3>
+                            <p class="info-content">San Francisco, California</p>
+                        </div>
+                        
+                        <div class="info-block">
+                            <h3 class="info-title">EMAIL</h3>
+                            <p class="info-content"><a href="mailto:hello@mayavelasquez.com">hello@mayavelasquez.com</a></p>
+                        </div>
+                        
+                        <div class="info-block">
+                            <h3 class="info-title">CONNECT</h3>
+                            <div class="info-social">
+                                <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Interactive Footer -->
+    <footer class="dynamic-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">MV</span>
+            </div>
+            <div class="footer-tagline">
+                <p>© 2025 Maya Velasquez — Building Digital Realities</p>
+            </div>
+            <div class="footer-action">
+                <a href="#intro" class="back-to-top">
+                    <span class="top-text">BACK TO TOP</span>
+                    <span class="top-arrow"></span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-wave"></div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

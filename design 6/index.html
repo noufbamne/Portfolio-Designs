@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe | Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Particles -->
+    <div class="bg-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">John<span>Doe</span></a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title">Hi, I'm <span>John Doe</span></h1>
+                <h2 class="hero-subtitle">Software Engineer</h2>
+                <p class="hero-description">I build robust, scalable, and user-friendly applications that solve real-world problems.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="primary-btn"><i class="fas fa-envelope"></i> Contact Me</a>
+                    <a href="#projects" class="secondary-btn"><i class="fas fa-laptop-code"></i> View Projects</a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="https://via.placeholder.com/500" alt="John Doe">
+                <div class="experience-badge">
+                    <span class="years">5+</span>
+                    <span class="text">Years<br>Experience</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>About Me</h2>
+                <p>Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="https://via.placeholder.com/400" alt="About John Doe">
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Who am I?</h3>
+                    <p class="lead">I'm a passionate Software Engineer with a knack for creating elegant solutions in the least amount of time.</p>
+                    <p>With 5+ years of experience in developing web and mobile applications, I specialize in building high-performance, responsive applications that deliver exceptional user experiences. My expertise spans frontend and backend technologies, with a focus on JavaScript frameworks like React and Node.js.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or mentoring aspiring developers.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-title">Name:</span>
+                            <span class="info-value">John Doe</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span class="info-value">john@example.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Location:</span>
+                            <span class="info-value">San Francisco, CA</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Availability:</span>
+                            <span class="info-value">Open to opportunities</span>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="#" class="primary-btn"><i class="fas fa-download"></i> Download CV</a>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>My Skills</h2>
+                <p>What I'm good at</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-tabs" data-aos="fade-up">
+                    <button class="skill-tab active" data-target="technical">Technical Skills</button>
+                    <button class="skill-tab" data-target="soft">Soft Skills</button>
+                    <button class="skill-tab" data-target="languages">Languages</button>
+                </div>
+                
+                <div class="skills-tab-content active" id="technical">
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h3 class="skill-title">React.js</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 95%"></div>
+                                <span class="progress-value">95%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <h3 class="skill-title">Node.js</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                                <span class="progress-value">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h3 class="skill-title">JavaScript</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 98%"></div>
+                                <span class="progress-value">98%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3 class="skill-title">HTML5/CSS3</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 95%"></div>
+                                <span class="progress-value">95%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3 class="skill-title">MongoDB</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                                <span class="progress-value">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+                            <div class="skill-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <h3 class="skill-title">Git/GitHub</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 92%"></div>
+                                <span class="progress-value">92%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="700">
+                            <div class="skill-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <h3 class="skill-title">AWS</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                                <span class="progress-value">80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="800">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <h3 class="skill-title">Docker</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                                <span class="progress-value">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-tab-content" id="soft">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="skill-title">Team Collaboration</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 98%"></div>
+                                <span class="progress-value">98%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <h3 class="skill-title">Project Management</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                                <span class="progress-value">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3 class="skill-title">Communication</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 95%"></div>
+                                <span class="progress-value">95%</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3 class="skill-title">Problem Solving</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 96%"></div>
+                                <span class="progress-value">96%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-tab-content" id="languages">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <h3 class="skill-title">English</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 100%"></div>
+                                <span class="progress-value">Native</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <h3 class="skill-title">Spanish</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                                <span class="progress-value">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <h3 class="skill-title">French</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 50%"></div>
+                                <span class="progress-value">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>My Projects</h2>
+                <p>What I've built</p>
+            </div>
+            <div class="project-filters" data-aos="fade-up">
+                <button class="project-filter active" data-filter="all">All</button>
+                <button class="project-filter" data-filter="web">Web Development</button>
+                <button class="project-filter" data-filter="mobile">Mobile Apps</button>
+                <button class="project-filter" data-filter="design">UI/UX Design</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="E-Commerce Platform">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">React.js</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">A full-stack e-commerce platform with admin dashboard, payment integration, and analytics.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="mobile" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="Fitness Tracker App">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Redux</span>
+                        </div>
+                        <h3 class="project-title">Fitness Tracker App</h3>
+                        <p class="project-description">A mobile app that tracks workouts, nutrition, and provides personalized fitness plans.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="Real-time Chat Application">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Socket.io</span>
+                            <span class="project-tag">Express.js</span>
+                            <span class="project-tag">React.js</span>
+                        </div>
+                        <h3 class="project-title">Real-time Chat Application</h3>
+                        <p class="project-description">A real-time messaging platform with private chats, group channels, and media sharing.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="Dashboard UI Kit">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Figma</span>
+                            <span class="project-tag">UI/UX</span>
+                            <span class="project-tag">Design System</span>
+                        </div>
+                        <h3 class="project-title">Dashboard UI Kit</h3>
+                        <p class="project-description">A comprehensive UI kit for building modern, responsive admin dashboards.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="mobile" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="Food Delivery App">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Google Maps API</span>
+                        </div>
+                        <h3 class="project-title">Food Delivery App</h3>
+                        <p class="project-description">A cross-platform food delivery app with real-time order tracking and payment processing.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="Task Management System">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Express.js</span>
+                            <span class="project-tag">PostgreSQL</span>
+                        </div>
+                        <h3 class="project-title">Task Management System</h3>
+                        <p class="project-description">A collaborative task management tool with Kanban boards, time tracking, and team analytics.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-cta" data-aos="fade-up">
+                <a href="#" class="primary-btn"><i class="fas fa-th-large"></i> View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>My Experience</h2>
+                <p>Where I've worked</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Senior Software Engineer</h3>
+                            <span class="timeline-period">2022 - Present</span>
+                        </div>
+                        <div class="timeline-company">
+                            <span class="company-name">Tech Innovations Inc.</span>
+                            <span class="company-location">San Francisco, CA</span>
+                        </div>
+                        <ul class="timeline-responsibilities">
+                            <li>Lead a team of 5 developers in building a cloud-based SaaS platform</li>
+                            <li>Architect and implement microservices architecture using Node.js and Docker</li>
+                            <li>Reduce application load time by 40% through performance optimization</li>
+                            <li>Implement CI/CD pipelines for automated testing and deployment</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Frontend Developer</h3>
+                            <span class="timeline-period">2020 - 2022</span>
+                        </div>
+                        <div class="timeline-company">
+                            <span class="company-name">Creative Digital Solutions</span>
+                            <span class="company-location">Austin, TX</span>
+                        </div>
+                        <ul class="timeline-responsibilities">
+                            <li>Developed responsive web applications using React.js and Redux</li>
+                            <li>Collaborated with UI/UX designers to implement pixel-perfect designs</li>
+                            <li>Integrated RESTful APIs for data retrieval and manipulation</li>
+                            <li>Implemented unit and integration tests using Jest and React Testing Library</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Junior Software Developer</h3>
+                            <span class="timeline-period">2018 - 2020</span>
+                        </div>
+                        <div class="timeline-company">
+                            <span class="company-name">Global Tech Solutions</span>
+                            <span class="company-location">Seattle, WA</span>
+                        </div>
+                        <ul class="timeline-responsibilities">
+                            <li>Built and maintained web applications using JavaScript, HTML, and CSS</li>
+                            <li>Assisted in developing backend APIs using Node.js and Express</li>
+                            <li>Participated in code reviews and agile development processes</li>
+                            <li>Debugged and fixed issues in existing applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Education & Certifications</h2>
+                <p>My academic background and credentials</p>
+            </div>
+            <div class="education-content">
+                <div class="education-column" data-aos="fade-right">
+                    <h3 class="column-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    
+                    <div class="education-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="edu-date">2014 - 2018</div>
+                        <h4 class="edu-degree">Bachelor of Science in Computer Science</h4>
+                        <p class="edu-school">Stanford University</p>
+                        <p class="edu-description">Specialized in Software Engineering with minors in AI and Human-Computer Interaction. Graduated with honors.</p>
+                    </div>
+                    
+                    <div class="education-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="edu-date">2012 - 2014</div>
+                        <h4 class="edu-degree">Associate of Science in Web Development</h4>
+                        <p class="edu-school">California Community College</p>
+                        <p class="edu-description">Focused on web technologies and programming fundamentals. Received the Outstanding Student Award.</p>
+                    </div>
+                </div>
+                
+                <div class="certification-column" data-aos="fade-left">
+                    <h3 class="column-title"><i class="fas fa-certificate"></i> Certifications</h3>
+                    
+                    <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="cert-date">2023</div>
+                        <h4 class="cert-name">AWS Certified Solutions Architect</h4>
+                        <p class="cert-issuer">Amazon Web Services</p>
+                    </div>
+                    
+                    <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="cert-date">2022</div>
+                        <h4 class="cert-name">Google Cloud Professional Developer</h4>
+                        <p class="cert-issuer">Google</p>
+                    </div>
+                    
+                    <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="cert-date">2021</div>
+                        <h4 class="cert-name">React.js Certification</h4>
+                        <p class="cert-issuer">Meta</p>
+                    </div>
+                    
+                    <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="cert-date">2020</div>
+                        <h4 class="cert-name">Certified Scrum Master</h4>
+                        <p class="cert-issuer">Scrum Alliance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Testimonials</h2>
+                <p>What people say about me</p>
+            </div>
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonial-item active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>John is an exceptional developer who consistently delivered high-quality code. His technical skills and problem-solving abilities made him an invaluable asset to our team. I would work with him again in a heartbeat.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/100" alt="Sarah Johnson">
+                            <div class="author-info">
+                                <h4 class="author-name">Sarah Johnson</h4>
+                                <p class="author-role">CTO at Tech Innovations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Working with John was a game-changer for our startup. He not only delivered the project on time but also provided valuable insights that helped us scale. His technical expertise coupled with business understanding makes him stand out.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/100" alt="David Rodriguez">
+                            <div class="author-info">
+                                <h4 class="author-name">David Rodriguez</h4>
+                                <p class="author-role">Founder at NextGen Startup</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>John's attention to detail and commitment to creating accessible, user-friendly interfaces is remarkable. He transformed our outdated system into a modern, responsive application that our customers love.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/100" alt="Michael Chen">
+                            <div class="author-info">
+                                <h4 class="author-name">Michael Chen</h4>
+                                <p class="author-role">Product Manager at Digital Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="control-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="control-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="control-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Contact Me</h2>
+                <p>Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Email</h3>
+                            <p class="card-value">john@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Phone</h3>
+                            <p class="card-value">+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Location</h3>
+                            <p class="card-value">San Francisco, CA</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3 class="social-title">Follow Me</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">John<span>Doe</span></a>
+                    <p class="footer-tagline">Creating innovative software solutions</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 class="footer-title">Navigation</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">More</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 John Doe. All Rights Reserved.</p>
+                <div class="back-to-top">
+                    <a href="#home"><i class="fas fa-chevron-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Theme Switch -->
+    <div class="theme-switch">
+        <div class="theme-switch-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="toggle-ball"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="logo">
+            <span>&lt;John<span class="highlight">Doe</span>/&gt;</span>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">John Doe</span></h1>
+                <div class="type-animation">
+                    <span id="typed-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p>Building digital experiences with code and creativity.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn primary-btn">Contact Me</a>
+                    <a href="#" class="btn secondary-btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+        <div class="floating-cards">
+            <div class="card" data-speed="1">
+                <i class="fab fa-react"></i>
+                <p>React</p>
+            </div>
+            <div class="card" data-speed="2">
+                <i class="fab fa-node-js"></i>
+                <p>Node.js</p>
+            </div>
+            <div class="card" data-speed="1.5">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="card" data-speed="2.5">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+            </div>
+            <div class="card" data-speed="1.8">
+                <i class="fas fa-database"></i>
+                <p>MongoDB</p>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="dots"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <h2>About <span class="highlight">Me</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="/api/placeholder/400/400" alt="John Doe Profile">
+                <div class="about-image-border"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-tabs">
+                    <button class="tab-btn active" data-tab="personal">Personal Info</button>
+                    <button class="tab-btn" data-tab="education">Education</button>
+                    <button class="tab-btn" data-tab="experience">Experience</button>
+                </div>
+                <div class="tab-content active" id="personal">
+                    <p>I'm a passionate software engineer with over 5 years of experience building web applications and software solutions. I specialize in creating responsive, user-friendly interfaces and robust backend systems.</p>
+                    <div class="personal-info-grid">
+                        <div class="info-item">
+                            <span class="info-title">Name:</span>
+                            <span class="info-detail">John Doe</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Age:</span>
+                            <span class="info-detail">28 Years</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span class="info-detail">john.doe@example.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">From:</span>
+                            <span class="info-detail">San Francisco, CA</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Availability:</span>
+                            <span class="info-detail">Freelance/Full-time</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Languages:</span>
+                            <span class="info-detail">English, Spanish</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="education">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>MSc Computer Science</h3>
+                                <p>Stanford University</p>
+                                <span class="timeline-date">2018 - 2020</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>BSc Computer Engineering</h3>
+                                <p>University of California, Berkeley</p>
+                                <span class="timeline-date">2014 - 2018</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="experience">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Senior Frontend Developer</h3>
+                                <p>Tech Innovations Inc.</p>
+                                <span class="timeline-date">2021 - Present</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Full Stack Developer</h3>
+                                <p>Digital Solutions LLC</p>
+                                <span class="timeline-date">2019 - 2021</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Junior Developer</h3>
+                                <p>WebCraft Studio</p>
+                                <span class="timeline-date">2017 - 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-header">
+            <h2>My <span class="highlight">Skills</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skills-categories">
+                <button class="category-btn active" data-category="frontend">Frontend</button>
+                <button class="category-btn" data-category="backend">Backend</button>
+                <button class="category-btn" data-category="tools">Tools</button>
+            </div>
+            <div class="skills-grid active" id="frontend-skills">
+                <div class="skill-card" data-percentage="90">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-percentage="85">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-percentage="88">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 88%;"></div>
+                        </div>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-percentage="80">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-grid" id="backend-skills">
+                <div class="skill-card" data-percentage="82">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 82%;"></div>
+                        </div>
+                        <span class="skill-percentage">82%</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-percentage="75">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-percentage="78">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MongoDB</h3>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 78%;"></div>
+                        </div>
+                        <span class="skill-percentage">78%</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-percentage="70">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Express.js</h3>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 70%;"></div>
+                        </div>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-grid" id="tools-skills">
+                <div class="skill-card" data-percentage="88">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 88%;"></div>
+                        </div>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-percentage="80">
+                    <div class="skill-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3>Docker</h3>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-percentage="75">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>AWS</h3>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-percentage="85">
+                    <div class="skill-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>CI/CD</h3>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <h2>My <span class="highlight">Services</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="services-carousel-container">
+            <div class="services-carousel">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and performance-optimized websites using modern technologies.</p>
+                    <a href="#" class="service-btn">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Building cross-platform mobile applications with React Native and Flutter.</p>
+                    <a href="#" class="service-btn">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Developing robust API services and database solutions for your applications.</p>
+                    <a href="#" class="service-btn">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and engaging user interfaces with great user experience.</p>
+                    <a href="#" class="service-btn">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Setting up and managing cloud infrastructure on AWS, Azure, or Google Cloud.</p>
+                    <a href="#" class="service-btn">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Improving your website's visibility and search engine ranking for better results.</p>
+                    <a href="#" class="service-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-control prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-dots"></div>
+                <button class="carousel-control next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+        <div class="section-header">
+            <h2>My <span class="highlight">Certifications</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="certifications-container">
+            <div class="certification-card">
+                <div class="certification-badge">
+                    <i class="fab fa-aws"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>AWS Certified Solutions Architect</h3>
+                    <p class="certification-issuer">Amazon Web Services</p>
+                    <p class="certification-date">August 2022 - Present</p>
+                    <a href="#" class="certification-link">View Certificate</a>
+                </div>
+            </div>
+            <div class="certification-card">
+                <div class="certification-badge">
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Meta React Developer</h3>
+                    <p class="certification-issuer">Meta (Facebook)</p>
+                    <p class="certification-date">March 2021 - Present</p>
+                    <a href="#" class="certification-link">View Certificate</a>
+                </div>
+            </div>
+            <div class="certification-card">
+                <div class="certification-badge">
+                    <i class="fab fa-google"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Google Professional Cloud Developer</h3>
+                    <p class="certification-issuer">Google Cloud</p>
+                    <p class="certification-date">November 2021 - Present</p>
+                    <a href="#" class="certification-link">View Certificate</a>
+                </div>
+            </div>
+            <div class="certification-card">
+                <div class="certification-badge">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Certified Information Security Professional</h3>
+                    <p class="certification-issuer">ISC²</p>
+                    <p class="certification-date">May 2022 - Present</p>
+                    <a href="#" class="certification-link">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="languages-section">
+        <div class="section-header">
+            <h2>Languages <span class="highlight">I Speak</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="languages-container">
+            <div class="language-card">
+                <div class="language-progress" data-progress="95">
+                    <svg width="120" height="120" viewBox="0 0 120 120">
+                        <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
+                        <circle cx="60" cy="60" r="54" fill="none" stroke="var(--primary-color)" stroke-width="12" stroke-dasharray="339.292" stroke-dashoffset="16.9646" />
+                    </svg>
+                    <div class="language-percentage">95%</div>
+                </div>
+                <h3>English</h3>
+                <p>Professional</p>
+            </div>
+            <div class="language-card">
+                <div class="language-progress" data-progress="80">
+                    <svg width="120" height="120" viewBox="0 0 120 120">
+                        <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
+                        <circle cx="60" cy="60" r="54" fill="none" stroke="var(--primary-color)" stroke-width="12" stroke-dasharray="339.292" stroke-dashoffset="67.8584" />
+                    </svg>
+                    <div class="language-percentage">80%</div>
+                </div>
+                <h3>Spanish</h3>
+                <p>Fluent</p>
+            </div>
+            <div class="language-card">
+                <div class="language-progress" data-progress="50">
+                    <svg width="120" height="120" viewBox="0 0 120 120">
+                        <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
+                        <circle cx="60" cy="60" r="54" fill="none" stroke="var(--primary-color)" stroke-width="12" stroke-dasharray="339.292" stroke-dashoffset="169.646" />
+                    </svg>
+                    <div class="language-percentage">50%</div>
+                </div>
+                <h3>French</h3>
+                <p>Intermediate</p>
+            </div>
+            <div class="language-card">
+                <div class="language-progress" data-progress="30">
+                    <svg width="120" height="120" viewBox="0 0 120 120">
+                        <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
+                        <circle cx="60" cy="60" r="54" fill="none" stroke="var(--primary-color)" stroke-width="12" stroke-dasharray="339.292" stroke-dashoffset="237.5044" />
+                    </svg>
+                    <div class="language-percentage">30%</div>
+                </div>
+                <h3>German</h3>
+                <p>Basic</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2>Contact <span class="highlight">Me</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>john.doe@example.com</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Location</h3>
+                        <p>San Francisco, CA</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Subject</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <button type="submit" class="btn primary-btn form-submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>&lt;John<span class="highlight">Doe</span>/&gt;</span>
+            </div>
+            <p>Creating innovative web solutions with passion and dedication.</p>
+            <div class="footer-social">
+                <a href="#" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 John Doe. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
